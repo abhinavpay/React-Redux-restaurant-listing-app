@@ -1,0 +1,59 @@
+
+
+
+1.create a project - npx create-react-app resturant-listing-app
+
+2.cd resturant - listing app
+
+3. code .  in vs code terminal - npm start
+
+4.install react bootstrap - npm install react-bootstrap bootstrap
+
+5.elect template  from bootswatch
+
+7.import bootsrap.min.css in index.js
+
+
+6.Create components header and footer
+
+    type rfce in header and footer
+    import header and footer in app.js
+
+7. import navbar from react bootstrap
+
+
+8.app.json paste in public folder
+
+9.create a restlist component
+    import restlist in app.js
+
+
+10.import usestate in restlist
+
+11.import react bootsrap grid
+
+    -import  react bootsrap grid row col container in restcard and rest list
+    -create row tag inside restcard
+    -create a col tag inside restlis
+
+12 Redirecttion - View a resturant
+
+13 create a component - viewrest
+
+14. install react router dom - npm i react-router
+
+import {BrowserRouter as Router,Routes,Route} from ' react-router-dom';  in app.js
+
+Route - for steup path for a component
+Routes - for handling all route path tag
+Router - holding Routes
+
+15.useParams(hooks) - Returns an object of key/value pairs of the dynamic params from the current URL that were matched by the route path.
+
+16. create a component  - restop - for displaying the opening time.
+
+17. create a component - for displaying the review
+
+
+
+
