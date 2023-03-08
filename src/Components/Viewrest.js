@@ -34,17 +34,10 @@ function Viewrest() {
                
            })
    }
-
-
    // console.log(AllResturants);
-
-
    useEffect(()=>{
        getResturants()
    },[])
-
-
-
    const viewrest = AllResturants.find(item=>item.id==urlparams.id)
    console.log(viewrest);
 

@@ -54,6 +54,13 @@ Router - holding Routes
 
 17. create a component - for displaying the review
 
+        REDUX  - to manage state
 
+18. install redux library - npm i redux react-redux redux-thunk
 
+        1.create a store file  -  src/store.js    (To hold updated states)
+         2. create Action - src / actions/ restlistAction.js(Logic - to fetch data from an API)
+            1.To fetch data here we use axios  - npm i axios
+            3. create constants
+            4.create  Reducer folder  - src/reducers/restReducer.js
 

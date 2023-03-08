@@ -5,6 +5,11 @@ import Restcard from './Restcard'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {RestListAction} from '../actions/restlistAction'
+import { useDispatch, useSelector } from 'react-redux';
+// import { restaurantListReducer } from '../Reducer/restReducer';
+
+
 function Restlist() {
 
 
@@ -28,11 +33,24 @@ function Restlist() {
     }
 
 
-    // console.log(AllResturants);
+    console.log(AllResturants);
  
 
+    const dispatch = useDispatch()
+
+    const result = useSelector(state=>state.restaurantReducer)
+
+    console.log(result);
+
+    const {restaurantList}=result;
+
+
     useEffect(()=>{
-        getResturants()
+        // getResturants()
+
+        dispatch(RestListAction())
+
+
     },[])
 
   return (
@@ -42,7 +60,7 @@ function Restlist() {
     
     {
         
-        AllResturants.map((item)=>(
+        restaurantList?.map((item)=>(
             <Restcard restaurant ={item} />
             // <h1>{item.name}</h1>
             
